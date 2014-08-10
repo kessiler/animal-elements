@@ -1,0 +1,28 @@
+{
+    "name": "animal-elements",
+    "version": "0.0.1",
+    "description": "Web Component for generator animals using Polymer.",
+    "license": "MIT",
+    "main": "dist/penguin.html",
+    "keywords": [
+        "polymer",
+        "web-components",
+        "animal-elements",
+        "penguin",
+        "lion",
+        "bear",
+        "monkey",
+        "dog",
+        "cat",
+        "elephant",
+        "sheep"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#~0.3.5"
+    }
+}
