@@ -1,16 +1,70 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<polymer-element name="penguin">
-	<template>
-		<style>
-		
-		</style>
+<polymer-element name="animal-penguin" noscript>
+<template>
+	<style>
+		.body {
+			width: 90px;
+			height: 100px;
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.body:before, .body:after {
+			content: ''; 
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.penguin {
+			width: 55px;
+			height: 55px;
+			background-color: #1f173a;
+			border-radius: 50% / 75% 75% 35% 35%;
+			box-shadow: 0 50px 0 -6px white, 0 55px 0 -5px white, 0 62px 0 -5px white, 0 50px 0 2px #1f173a, 0 55px 0 4px #1f173a,
+			0 62px 0 5px #1f173a, -8px 55px 0 -3px white, -13px 51px 0 -2px #1f173a, 8px 55px 0 -3px white, 13px 51px 0 -2px #1f173a,
+			-15px 85px 0 -14px #f9761c, 15px 85px 0 -14px #f9761c;
+		}
+		.penguin:after {
+			top: 12px;
+			left: 8px;
+			width: 25px;
+			height: 34px;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 15px 0 white, 7px 13px white, 16px 6px white, -2px 6px white;
+		}
+		.penguin .face {
+			top: 34px;
+			left: 17px;
+			width: 0;
+			height: 0;
+			z-index: 5;
+			border-top: 9px solid #f9761c;
+			border-left: 11px solid transparent;
+			border-right: 11px solid transparent;
+			border-radius: 50%;
+		}
 
-		<div class="penguin">
-			<div class="face"></div>
-		</div>
-	</template>
-	<script>
-		Polymer('penguin');
-	</script>
+		.face:before, .face:after, .features:before, .features:after {
+			content: '';
+		}
+		.face, .face:before, .face:after, .features, .features:before, .features:after {
+			position: absolute;
+		}
+		.face:before {
+			top: -20px;
+			left: -8px;
+			z-index: 5;
+			width: 6px;
+			height: 8px;
+			background-color: #000;
+			border-radius: 50%;
+			box-shadow: 10px 0 #000;
+		}
+	</style>
+	<div class="penguin body">
+		<div class="face"></div>
+	</div>
+</template>
 </polymer-element>
