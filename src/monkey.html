@@ -1,0 +1,80 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="animal-monkey" noscript>
+<template>
+	<style>
+		.body {
+			width: 90px;
+			height: 100px;
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.body:before, .body:after {
+			content: ''; 
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.monkey {
+			width: 62px;
+			height: 67px;
+			border-radius: 50% / 45% 45% 55% 55%;
+			background-color: #694a16;
+			box-shadow: 0 48px 0 -15px #d0ba96, 0 48px 0 -6px #694a16, -30px -3px 0 -24px #d0ba96, 
+						29px -3px 0 -24px #d0ba96, -29px -3px 0 -18px #694a16, 29px -3px 0 -18px #694a16,
+						-10px 76px 0 -23px #694a16, 10px 76px 0 -23px #694a16;
+		}
+		.monkey:before {
+			display: none;
+			left: -16px;
+			top: 56px;
+			width: 30px;
+			height: 15px;
+			background-color: #694a16;
+			border-radius: 50% / 40%;
+			box-shadow: -1px 0 #d0ba96, 72px 0 #694a16, 73px 0 #d0ba96;
+		}
+		.monkey .face {
+			top: 29px;
+			left: 8px;
+			width: 46px;
+			height: 31px;
+			background-color: #d0ba96;
+			border: 0;
+			border-radius: 48%;
+			box-shadow: 17px 77px 0 -11px #d0ba96, -16px 77px 0 -11px #d0ba96, -26px 21px 0 -9px #694a16, 26px 21px 0 -9px #694a16;
+		}
+		.monkey .face:before {
+			top: 6px;
+			left: 17px;
+			z-index: 5;
+			width: 4px;
+			height: 4px;
+			background-color: #2f1f05;
+			border-radius: 50%;
+			box-shadow: 7px 0 #2f1f05, -36px 25px 0 1px #d0ba96, -37px 25px 0 1px #694a16, -36px 29px 0 1px #d0ba96,
+						-37px 29px 0 2px #694a16, 43px 25px 0 1px #d0ba96, 44px 25px 0 1px #694a16, 43px 29px 0 1px #d0ba96,
+						44px 29px 0 2px #694a16, -5px -12px 0 1px #2f1f05, -6px -12px 0 7px #d0ba96, 
+						13px -12px 0 1px #2f1f05, 14px -12px 0 7px #d0ba96;
+		}
+		.monkey .face:after {
+			left: 12px;
+			top: 10px;
+			width: 22px;
+			height: 12px;
+			border-bottom: 3px solid #000;
+			border-radius: 50%;
+		}
+		.face:before, .face:after, .features:before, .features:after {
+			content: '';
+		}
+		.face, .face:before, .face:after, .features, .features:before, .features:after {
+			position: absolute;
+		}
+	</style>
+	<div class="monkey body">
+		<div class="face"></div>
+	</div>
+</template>
+</polymer-element>
