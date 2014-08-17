@@ -9,9 +9,27 @@
 
     <!-- Importing Custom Elements -->
     <link rel="import" href="src/penguin.html">
+    <link rel="import" href="src/monkey.html">
+    <link rel="import" href="src/lion.html">
+    <style>
+    	animal-penguin::shadow .penguin {
+    		top: 20px;
+    		left: 30px;
+    	}
+    	animal-monkey::shadow .monkey {
+    		top: 20px;
+    		left: 130px;
+    	}
+    	animal-lion::shadow .lion {
+    		top: 20px;
+    		left: 230px;
+    	}
+    </style>
 </head>
 <body>
     <!-- Using custom element -->
     <animal-penguin></animal-penguin>
+    <animal-monkey></animal-monkey>
+    <animal-lion></animal-lion>
 </body>
 </html>

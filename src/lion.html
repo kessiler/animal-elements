@@ -1,0 +1,86 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="animal-lion" noscript>
+<template>
+	<style>
+		.body {
+			width: 90px;
+			height: 100px;
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.body:before, .body:after {
+			content: ''; 
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.lion {
+			width: 70px;
+			height: 70px;
+			background-color: #df8f2b;
+			border-radius: 50% / 45% 45% 35% 35%;
+			box-shadow: -13px -29px 0 -15px #b2701e, -29px -8px 0 -15px #b2701e, -23px 19px 0 -15px #b2701e,
+						0px 30px 0 -15px #b2701e, 23px 18px 0 -15px #b2701e, 27px -8px 0 -15px #b2701e, 
+						13px -27px 0 -15px #b2701e, -17px 84px 0 -22px #df8f2b,
+						17px 84px 0 -22px #df8f2b, 0 54px #df8f2b;
+		}
+		.lion:before {
+			left: -14px;
+			top: 72px;
+			width: 25px;
+			height: 25px;
+			background-color: #df8f2b;
+			border-radius: 50% / 40%;
+			box-shadow: -1px 0 #b2701e, 72px 0 #df8f2b, 73px 0 #b2701e;
+		}
+		.lion:after {
+			top: 75px;
+			right: -20px;
+			z-index: -1;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border-bottom: 5px solid #df8f2b;
+			border-left: 0;
+			border-right: 0;
+			box-shadow: 16px 3px 0 -13px #b2701e, 17px 3px 0 -13px #f1f1f1, 19px 5px 0 -13px #b2701e;
+		}
+		.lion .face {
+			top: 36px;
+			left: 32px;
+			width: 6px;
+			height: 7px;
+			background-color: #000;
+			border-radius: 50%;
+			box-shadow: -3px 0 black, 3px 0 black, 0 2px black, -10px -14px black, 10px -14px black;
+		}
+		.lion .face:before, .lion .face:after {
+			top: 0;
+			left: -16px;
+			width: 16px;
+			height: 20px;
+			border-radius: 50% / 40%;
+			border-right: 2px solid #000;
+			border-bottom: 2px solid #000;
+			border-left: 2px solid transparent;
+			border-top: 2px solid transparent;
+			box-shadow: 0px 0px #000;
+		}
+		.lion .face:after {
+			left: 2px;
+			transform: rotateY(180deg);
+		}
+		.face:before, .face:after, .features:before, .features:after {
+			content: '';
+		}
+		.face, .face:before, .face:after, .features, .features:before, .features:after {
+			position: absolute;
+		}
+	</style>
+	<div class="lion body">
+		<div class="face"></div>
+	</div>
+</template>
+</polymer-element>
