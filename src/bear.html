@@ -1,0 +1,76 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="animal-bear" noscript>
+<template>
+	<style>
+		.body {
+			width: 90px;
+			height: 100px;
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.body:before, .body:after {
+			content: ''; 
+		}
+		.body, .body:before, .body:after {
+			position: absolute;
+		}
+		.bear {
+			width: 70px;
+			height: 70px;
+			background-color: #5a3d0d;
+			border-radius: 50% / 45% 45% 35% 35%;
+			box-shadow: 0 54px 0 -12px #d0ba96, 0 54px 0 2px #5a3d0d, -18px -23px 0 -25px #d0ba96,
+						18px -23px 0 -25px #d0ba96, -18px -23px 0 -20px #5a3d0d, 18px -23px 0 -20px #5a3d0d,
+						-17px 84px 0 -22px #5a3d0d, 17px 84px 0 -22px #5a3d0d;
+		}
+		.bear:before {
+			left: -16px;
+			top: 56px;
+			width: 30px;
+			height: 25px;
+			background-color: #5a3d0d;
+			border-radius: 50% / 40%;
+			box-shadow: -1px 0 #d0ba96, 72px 0 #5a3d0d, 73px 0 #d0ba96;
+		}
+		.bear .face {
+			top: 24px;
+			left: 20px;
+			width: 30px;
+			height: 30px;
+			background-color: #d0ba96;
+			border: 0;
+			border-radius: 50%;
+		}
+		.bear .face:before {
+			top: 5px;
+			left: 11px;
+			z-index: 5;
+			width: 8px;
+			height: 8px;
+			background-color: #2f1f05;
+			border-radius: 50%;
+			box-shadow: -3px 0 #2f1f05, -2px 0 #2f1f05, 2px 0 #2f1f05, 3px 0 #2f1f05, 0 3px #2f1f05, -12px -12px #2f1f05, 12px -12px #2f1f05;
+		}
+		.bear .face:after {
+			left: 12px;
+			top: 11px;
+			width: 10px;
+			height: 10px;
+			border-bottom: 3px solid #000;
+			border-radius: 40%;
+			transform: rotate(-30deg);
+		}
+		.face:before, .face:after, .features:before, .features:after {
+			content: '';
+		}
+		.face, .face:before, .face:after, .features, .features:before, .features:after {
+			position: absolute;
+		}
+	</style>
+	<div class="bear body">
+		<div class="face"></div>
+	</div>
+</template>
+</polymer-element>
